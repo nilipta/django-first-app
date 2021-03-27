@@ -1,6 +1,6 @@
-{% if latest_question_list %}
+{% if database_questions_results %}
     <ul>
-        {% for data in latest_question_list %}
+        {% for data in database_questions_results %}
             <a href='/polls/'{{data.id}}> 
                 <li> {{  data.question_text }} </li>
             </a>
