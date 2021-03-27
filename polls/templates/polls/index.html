@@ -1,7 +1,9 @@
 {% if latest_question_list %}
     <ul>
         {% for data in latest_question_list %}
-            <li> {{  data.question_text  }} </li>
+            <a href='/polls/'{{data.id}}> 
+                <li> {{  data.question_text }} </li>
+            </a>
         {% endfor %}
     </ul>
 {% else %}
